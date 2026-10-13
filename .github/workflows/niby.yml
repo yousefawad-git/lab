@@ -16,4 +16,4 @@ jobs:
     needs: job1
     steps:
       - name: Hi Programming
-        run: echo "Hello programming - this is the CD (deploy) stage"
+        run: echo "Hello  - this is the CD (deploy) stage"

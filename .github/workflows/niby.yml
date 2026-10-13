@@ -1,0 +1,19 @@
+name: Simple CI/CD
+
+on:
+  push:
+    branches: [ test-ci ]
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greetings
+        run: echo "Hello Nile Student"
+
+  job2:
+    runs-on: ubuntu-latest
+    needs: job1
+    steps:
+      - name: Hi Programming
+        run: echo "Hello programming - this is the CD (deploy) stage"
